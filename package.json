@@ -1,0 +1,21 @@
+{
+  "name": "local-ai-agent-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first AI agent learning lab: a hand-built agent loop on top of Ollama.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "workspaces": [
+    "packages/shared",
+    "apps/server",
+    "apps/web"
+  ],
+  "scripts": {
+    "doctor": "npm run doctor --workspace @lab/server",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspace @lab/server",
+    "dev:web": "npm run dev --workspace @lab/web"
+  }
+}

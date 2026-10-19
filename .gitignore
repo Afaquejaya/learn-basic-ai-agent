@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+*.log
+
+# Runtime state (SQLite database, WAL files)
+data/*
+!data/.gitkeep
+
+.env
+.env.local
